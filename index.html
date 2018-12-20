@@ -12,16 +12,40 @@
     <title>Trains, Times and Places</title>
     <script>
       // jQuery methods go here...
-      $(document).ready(function(){
-        $(".jumbotron").css("backgroundImage", "url('assets/Harry-Potter-train.jpg')");
-      });
+      // $(document).ready(function(){
+      //   $("<body>").css("backgroundImage", "url('assets/Harry-Potter-train.jpg')");
+      // });
     </script>
   </head>
-  <body>
+  <body style="background-image: url('assets/Harry-Potter-train.jpg'); background-size:100%; background-repeat:no-repeat;">
     <!-- <h1>Trains, Times and Places</h1> -->
-    <div class="jumbotron" style="text-align:center; background-size:100%; background-repeat:no-repeat; font-weight:bold;">
-      <h1 class="display-4" style="color:white; -webkit-text-stroke:2px black; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Trains, Times and Places</h1>
+    <div class="jumbotron" style="text-align:center; background: rgba(255, 255, 255, 0)">
+      <h1 class="display-4" style="color:white; -webkit-text-stroke:2px black; font-weight:bold; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Trains, Times and Places</h1>
       <p class="lead" style="color:black; font-weight:bold; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:1.5em;"><span style="background: rgba(255, 255, 255, 0.397); border-radius: 10px;">&nbsp;The "Go-To" Source for <span style="font-style: italic">all</span>  your imaginary train schedules!&nbsp;</span></p>
+    </div>
+
+    <div class="card mx-4" style="background:rgba(255, 255, 255, 0.486)">
+      <h5 class="card-header">Current Train Schedule</h5>
+      <div class="card-body">
+        <!-- <h5 class="card-title">Train Name</h5> -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
