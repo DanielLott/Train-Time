@@ -4,17 +4,22 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap CSS  -  Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="css.css" /> -->
 
     <title>Trains, Times and Places</title>
+    <script>
+      // jQuery methods go here...
+      $(document).ready(function(){
+        $(".jumbotron").css("backgroundImage", "url('assets/Harry-Potter-train.jpg')");
+      });
+    </script>
   </head>
   <body>
     <!-- <h1>Trains, Times and Places</h1> -->
-    <div class="jumbotron" style="background-image: url('D:/danie/Google\ Drive/Working-Directory/Unit-07/Train-Time/assets/Harry-Potter-train') no-repeat center center fixed">
-    <!-- "text-align:center;background-image: url(assets/Harry-Potter-train.jpg);background-size:100%;background-repeat:no-repeat;"> -->
+    <div class="jumbotron" style="text-align:center;background-size:100%;background-repeat:no-repeat;">
       <h1 class="display-4" >Trains, Times and Places</h1>
       <p class="lead" style="text-align:center">The "Go-To" Source for all your imaginary train schedules!</p>
       <!-- <hr class="my-4">
@@ -23,6 +28,7 @@
     </div>
 
     <!-- Optional JavaScript -->
+
     <!-- jQuery first, (jQuery library) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- then Popper.js, -->
