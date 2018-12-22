@@ -4,30 +4,31 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Page Title (SEO, ARIA, etc) -->
+    <title>Trains, Times, and Places</title>
+    <!-- jQuery reference -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap CSS  -  Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css.css" /> -->
-
-    <title>Trains, Times and Places</title>
+    <!-- Moment.js reference-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script>
       // jQuery methods go here...
-      // $(document).ready(function(){
-      //   $("<body>").css("backgroundImage", "url('assets/Harry-Potter-train.jpg')");
-      // });
+      $(document).ready(function(){
+        $("<body>").css("backgroundImage", "url('assets/Harry-Potter-train.jpg')");
+      });
     </script>
   </head>
-  <body style="background-image: url('assets/Harry-Potter-train.jpg'); background-size:100%; background-repeat:no-repeat;">
+  <body style="background: #324943; background-image: url('assets/Harry-Potter-train.jpg'); background-size:100%; background-repeat:no-repeat; background-attachment: fixed;">
     <!-- <h1>Trains, Times and Places</h1> -->
     <div class="jumbotron" style="text-align:center; background: rgba(255, 255, 255, 0)">
-      <h1 class="display-4" style="color:white; -webkit-text-stroke:2px black; font-weight:bold; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Trains, Times and Places</h1>
-      <p class="lead" style="color:black; font-weight:bold; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:1.5em;"><span style="background: rgba(255, 255, 255, 0.397); border-radius: 10px;">&nbsp;The "Go-To" Source for <span style="font-style: italic">all</span>  your imaginary train schedules!&nbsp;</span></p>
+      <h1 class="display-4" style="color:white; -webkit-text-stroke:2px black; font-weight:bold; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Trains, Times, and Places</h1>
+      <p class="lead" style="color:black; font-weight:bold; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:1em;"><span style="background: rgba(255, 255, 255, 0.397); border-radius: 10px;">&nbsp;The "Go-To" Source for <span style="font-style: italic">all</span>  your imaginary train schedules!&nbsp;</span></p>
     </div>
 
-    <div class="card mx-4" style="background:rgba(255, 255, 255, 0.486)">
+    <div class="card ml-2" style="background:rgba(255, 255, 255, 0.486)">
       <h5 class="card-header">Current Train Schedule</h5>
       <div class="card-body">
-        <!-- <h5 class="card-title">Train Name</h5> -->
         <div class="table-responsive">
           <table class="table">
             <thead>
@@ -41,12 +42,38 @@
             </thead>
             <tbody>
               <tr>
-              </tr>
+              </tr> 
             </tbody>
           </table>
         </div>
       </div>
     </div>
+    <div class="card m-2" style="background:rgba(255, 255, 255, 0.486); width:350px;">
+        <h5 class="card-header">Add Train</h5>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="trainName">Train Name</label>
+              <input type="text" class="form-control" id="trainName" placeholder="Hogwarts Express" style="width:300px">
+            </div>
+            <div class="form-group">
+              <label for="destination">Destination</label>
+              <input type="text" class="form-control" id="destination" placeholder="Hogwarts Castle" style="width:300px">
+            </div>
+            <div class="form-group">
+                <label for="arrivalTime">First Train Time (HH:mm - military time)</label>
+                <input type="time" class="form-control" id="arrivalTime" style="width:100px">
+              </div>
+            <div class="form-group">
+                <label for="frequency">Frequency (in minutes)</label>
+                <input type="number" class="form-control" id="frequency" aria-describedby="frequencyHelp" placeholder="120" style="width:100px">
+                <small id="frequencyHelp" class="form-text text-muted">How much time between each arrival of this train.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+  
 
     <!-- Optional JavaScript -->
 
